@@ -1,10 +1,16 @@
-.App {
-  text-align: center;
+body {
+  height: 100vh;
+  background-color: #666;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: center;
+  padding: 2em 0;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -26,6 +32,34 @@
 
 .App-link {
   color: #61dafb;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h4 {
+  font-style: italic;
+}
+
+.mainCard {
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff
+}
+
+footer a {
+  color: #fff
 }
 
 @keyframes App-logo-spin {
