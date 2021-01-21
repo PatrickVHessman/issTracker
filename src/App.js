@@ -3,7 +3,7 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import ReactMapGL, {NavigationControl, Marker} from 'react-map-gl';
-import token from './token';
+// import token from './token';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import icon from './space-station.png'
 import { Button, Paper } from '@material-ui/core';
@@ -47,7 +47,6 @@ function App() {
   setLatitude(newLat);
         setLongitude(newLong);
         setTimestamp(newTime);
-        console.log(res.data.timestamp);
       })
   }
 
@@ -67,7 +66,7 @@ function App() {
       <div style={{margin: "auto", display: "block"}}>
       <ReactMapGL
         {...viewport}
-        mapboxApiAccessToken={token}
+        mapboxApiAccessToken='pk.eyJ1IjoicHZoZXNzbWFuIiwiYSI6ImNrazQ3bzJ0bDFnYm0ybnFqcWsybjMwdHIifQ.QkEg3nGh7j5GJMydTrT17Q'
         onViewportChange={(viewport) => setViewport(viewport)}
         style={style}
         mapStyle='mapbox://styles/mapbox/outdoors-v11'
